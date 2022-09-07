@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id='header'>
+    <img src="https://www.baytekent.com/wp-content/uploads/2017/06/connect4logo.png">
+  </div>
+
+  <div id="restart_screen" class="hidden">
+    <button id="restart">Restart Game</button>
+  </div>
+
+  <div id="start_screen">
+    <form>
+      <div>
+        <label for="rows">Enter number of rows:</label>
+        <input type="number" name="rows" id="rows" value="6">
+      </div>
+      <div>
+        <label for="columns">Enter number of columns:</label>
+        <input type="number" name="columns" id="columns" value="7">
+      </div>
+      <div id="start">
+        <button>Start Game</button> 
+      </div>
+    </form>
+  </div>
+
+<div id ="winner">
+</div>
+<div id="game" class="hidden">
+  <table id="board"></table>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
